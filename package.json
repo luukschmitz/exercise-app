@@ -1,0 +1,14 @@
+{
+  "name": "between-abundance-exercise",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live in-class exercise for the job talk: who can check power assembled across spheres?",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "qrcode": "^1.5.4",
+    "ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,17 @@
+# One-click deploy to Render (https://render.com). Push exercise-app/ to a Git
+# repo, then "New > Blueprint" and point it here. Render gives an always-on
+# HTTPS URL with WebSocket support. Use that URL's /present in slide 11.
+#
+# Keep ONE instance (state is in-memory; do not autoscale or votes split).
+services:
+  - type: web
+    name: abundance-exercise
+    runtime: node
+    plan: starter            # always-on; free tier sleeps and cold-starts (~30s)
+    buildCommand: npm install
+    startCommand: npm start
+    numInstances: 1
+    healthCheckPath: /present
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
