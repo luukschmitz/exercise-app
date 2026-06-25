@@ -20,6 +20,7 @@ app.use((req, res, next) => {
   next();
 });
 app.get('/present', (req, res) => res.sendFile(path.join(__dirname, 'public', 'present.html')));
+app.get('/explore', (req, res) => res.sendFile(path.join(__dirname, 'public', 'explore.html')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // QR for the join URL (presenter shows it). data param is the full join URL.

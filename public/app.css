@@ -89,3 +89,15 @@ h1,h2,h3{font-family:'DM Serif Display',Georgia,serif; color:var(--heading); fon
 .insight{margin-top:18px; background:var(--surface); border-left:3px solid var(--accent); border-radius:0 8px 8px 0; padding:14px 18px; font-size:1.05rem; max-width:80ch;}
 .insight.hidden{display:none}
 .verdict{margin-top:14px; font-family:'DM Serif Display',serif; font-style:italic; color:var(--heading); font-size:1.15rem;}
+
+/* ── take-home / explore page ────────────────────────────────────────── */
+.case-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:18px}
+.pick{display:flex;flex-direction:column;gap:6px;align-items:flex-start;text-align:left;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .12s}
+.pick:hover{border-color:var(--accent)}
+.pick-name{font-family:'DM Serif Display',Georgia,serif;font-size:1.2rem;color:var(--heading)}
+.decision{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+.ends{display:flex;gap:14px;align-items:center;color:var(--muted);font-size:.95rem;margin-top:10px}
+.opt.static{cursor:default}
+.opt.static:active{transform:none}
+.reveal-btn{font-family:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--surface);color:var(--accent);border-radius:7px;padding:7px 12px;cursor:pointer;margin-top:10px}
+.reveal-btn.back{margin:0 0 12px}
